@@ -1,0 +1,26 @@
+git remote add origin https://github.com/SEU-USUARIO/patrimonio-luz-do-vale.git
+git push -u origin main
+```
+
+---
+
+## Passo 3 — Publicar no Vercel
+
+1. Acesse **vercel.com** e crie conta com o GitHub
+2. Clique em **Add New Project**
+3. Selecione o repositório `patrimonio-luz-do-vale`
+4. Antes de clicar em Deploy, clique em **Environment Variables** e adicione:
+```
+VITE_SUPABASE_URL        → sua URL do Supabase
+VITE_SUPABASE_ANON_KEY   → sua chave anon do Supabase
+```
+
+5. Clique em **Deploy**
+
+---
+
+## Resultado
+
+O Vercel vai gerar um link como:
+```
+https://patrimonio-luz-do-vale.vercel.app
